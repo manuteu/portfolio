@@ -1,15 +1,13 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import Tittle from './components/Tittle';
+import Experience from './views/Experience';
+import Intro from './views/Intro';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <div className='m-auto'>
-        <Tittle />
-      </div>
+      <Intro />
+      <Experience />
     </div>
   );
 }
