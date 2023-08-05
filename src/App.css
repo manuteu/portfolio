@@ -11,3 +11,9 @@ li {
   line-height: 60px;
   /* 333.333% */
 }
+
+p span {
+  color: var(--c-10, #525252);
+  font-style: normal;
+  line-height: normal;
+}
