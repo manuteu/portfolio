@@ -10,9 +10,9 @@ interface ExperienceProps {
 
 export default function ExperienceCard({ project, description, office, techs, year }: ExperienceProps) {
   return (
-    <div className='flex'>
-      <div className='gap-8 flex mt-5'>
-        <span className='text-neutral-600 text-sm font-normal leading-tight'>{year}</span>
+    <div className='flex mb-5'>
+      <div className='gap-8 flex mt-5 min-w-[82px]'>
+        <span className='text-neutral-600 text-sm font-normal leading-tight '>{year}</span>
         <div className='w-1 h-5 bg-gradient-to-b from-lime-400 to-lime-500' />
       </div>
       <div className='flex max-w-[660px] p-4 min-h-[140px] bg-[#F5F5F5] border border-[#F0F0F0] rounded'>

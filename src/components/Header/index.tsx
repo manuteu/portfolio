@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <header className='flex justify-between items-center py-10 max-w-[1080px] m-auto w-[85%]'>
+    <header className='flex justify-between items-center py-10 max-w-[1300px] m-auto w-5/6'>
       <div className=''>
         <a href="index.html" className='text-4xl font-bold'>Matheus Rodrigues</a>
       </div>
