@@ -4,9 +4,9 @@ import SectionName from '../components/SectionName'
 
 export default function Experience() {
   return (
-    <section className='flex justify-between w-5/6 max-w-[1300px] m-auto'>
+    <section className='flex justify-between w-5/6 max-w-[1300px] m-auto py-28'>
       <SectionName name="experiência" color="#E0E0E0" />
-      <div className='flex flex-col items-end '>
+      <div className='flex flex-col items-end'>
         <div className="flex items-start flex-row max-w-[550px] self-start mb-12">
           <div className='mx-10' />
           <span className="text-left text-neutral-600 text-2xl font-normal leading-loose">

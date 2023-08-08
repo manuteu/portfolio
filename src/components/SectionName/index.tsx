@@ -8,7 +8,7 @@ interface SectionNameProps {
 
 export default function SectionName({ name, color }: SectionNameProps) {
   return (
-    <div className='max-w-[330px]'>
+    <div className='max-w-[370px]'>
       <p className='text-left leading-none break-words uppercase text-[144px] font-bold' style={{color: color}}>{name}</p>
     </div>
   )

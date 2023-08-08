@@ -4,7 +4,7 @@ import Tittle from '../components/Tittle'
 
 export default function Intro() {
   return (
-    <section>
+    <section className='mb-32'>
       <Header />
       <div className='m-auto'>
         <Tittle />
