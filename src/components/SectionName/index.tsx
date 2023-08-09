@@ -1,4 +1,5 @@
 import React from 'react'
+import Reveal from '../Reveal';
 
 interface SectionNameProps {
   name: string;
@@ -9,7 +10,9 @@ interface SectionNameProps {
 export default function SectionName({ name, color }: SectionNameProps) {
   return (
     <div className='max-w-[370px]'>
-      <p className='text-left leading-none break-words uppercase text-[144px] font-bold' style={{color: color}}>{name}</p>
+      <Reveal>
+        <p className='text-left leading-none break-words uppercase text-[144px] font-bold' style={{ color: color }}>{name}</p>
+      </Reveal>
     </div>
   )
 }
