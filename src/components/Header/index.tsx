@@ -8,8 +8,8 @@ export default function Header() {
       </div>
       <nav className=''>
         <ul className='flex'>
-          <li><a href="index.html">Experiência</a></li>
-          <li><a href="index.html">Formação</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#education">Formação</a></li>
           <li><a href="index.html">Contato</a></li>
         </ul>
       </nav>
