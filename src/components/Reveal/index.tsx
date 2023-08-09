@@ -26,7 +26,7 @@ export default function Reveal({ children, v = { opacity: 1, x: 0 }, h = { opaci
 
 
   return (
-    <div ref={ref} className='relative w-full overflow-hidden' >
+    <div ref={ref} className='relative w-full' >
       <motion.div
         variants={{
           hidden: h,
