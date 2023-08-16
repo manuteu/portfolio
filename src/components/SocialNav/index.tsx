@@ -14,6 +14,8 @@ export default function SocialNav() {
         return window.open(
           `https://api.whatsapp.com/send?phone=5561983322486&text=Olá, gostaria de marcar um bate papo!`
         );
+      case 'mail':
+        return window.open('mailto:mathtechn@gmail.com');
       default:
         break;
     }
@@ -37,6 +39,7 @@ export default function SocialNav() {
         <div className='hover:animate-waving cursor-pointer' onClick={() => handleClick('linkedin')}>{SelectIcon('linkedin')}</div>
         <div className='hover:animate-waving cursor-pointer' onClick={() => handleClick('github')}>{SelectIcon('github')}</div>
         <div className='hover:animate-waving cursor-pointer' onClick={() => handleClick('wpp')}>{SelectIcon('wpp')}</div>
+        <div className='hover:animate-waving cursor-pointer' onClick={() => handleClick('mail')}>{SelectIcon('mail')}</div>
       </motion.div>
     </div>
   )
