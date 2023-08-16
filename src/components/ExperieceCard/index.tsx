@@ -1,5 +1,6 @@
 import React from 'react'
 import Reveal from '../Reveal';
+import { motion } from 'framer-motion'
 
 interface ExperienceProps {
   project: string;
@@ -12,7 +13,10 @@ interface ExperienceProps {
 export default function ExperienceCard({ project, description, office, techs, year }: ExperienceProps) {
   return (
     <Reveal h={{ opacity: 0, x: 75 }} v={{ opacity: 1, x: 0 }}>
-      <div className='flex mb-5'>
+      <motion.div
+        className='flex mb-5'
+        whileHover={{ scale: 1.1 }}
+      >
         <div className='gap-8 flex mt-5 max-w-[82px]'>
           <span className='text-neutral-600 text-sm font-normal leading-tight min-w-[46px]'>{year}</span>
           <div className='w-1 h-5 bg-gradient-to-b from-lime-400 to-lime-500' />
@@ -33,7 +37,7 @@ export default function ExperienceCard({ project, description, office, techs, ye
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Reveal>
   )
 }
