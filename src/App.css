@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-html {
-  scroll-behavior: smooth !important;
-}
-
 li {
   padding: 8px 18px;
   color: var(--c-13, #141414);
@@ -20,4 +16,24 @@ p span {
   color: var(--c-10, #525252);
   font-style: normal;
   line-height: normal;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #67DD0A; /* The typwriter cursor */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #67DD0A; }
 }

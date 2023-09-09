@@ -3,6 +3,7 @@ import EducationCard from '../components/EducationCard'
 import Reveal from '../components/Reveal';
 import SectionName from '../components/SectionName'
 import SelectIcon from '../icons'
+import { motion } from 'framer-motion'
 interface CourseTypes {
   course: string;
   duration: string;
@@ -17,19 +18,27 @@ export default function Education() {
 
   const CourseRow = ({ course, duration }: CourseTypes) => (
     <Reveal>
-      <div className='flex justify-between'>
-        <span className="text-white text-lg font-normal leading-tight">{course}</span>
-        <span className="text-neutral-400 text-lg font-normal leading-tight">{duration}</span>
-      </div>
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+      >
+        <div className='flex justify-between'>
+          <span className="text-white text-lg font-normal leading-tight">{course}</span>
+          <span className="text-neutral-400 text-lg font-normal leading-tight">{duration}</span>
+        </div>
+      </motion.div>
     </Reveal>
   )
   const LanguageRow = ({ idiom, level }: LanguageTypes) => (
     <Reveal>
-      <div className='flex gap-2'>
-        <span className="text-white text-lg font-normal leading-tight">{idiom}</span>
-        <span className="text-neutral-400 text-lg font-normal leading-tight">/</span>
-        <span className="text-neutral-400 text-lg font-normal leading-tight">{level}</span>
-      </div>
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+      >
+        <div className='flex gap-2'>
+          <span className="text-white text-lg font-normal leading-tight">{idiom}</span>
+          <span className="text-neutral-400 text-lg font-normal leading-tight">/</span>
+          <span className="text-neutral-400 text-lg font-normal leading-tight">{level}</span>
+        </div>
+      </motion.div>
     </Reveal>
   )
 
